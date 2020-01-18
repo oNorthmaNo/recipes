@@ -1,6 +1,7 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const CnameWebpackPlugin = require('cname-webpack-plugin');
 
 module.exports = () => ({
     devtool: "nosource-source-map",
@@ -25,5 +26,10 @@ module.exports = () => ({
             }
         ]
     },
-    plugins: [new MiniCssExtractPlugin()]
+    plugins: [
+        new MiniCssExtractPlugin(),
+        new CnameWebpackPlugin({
+            domain: 'helmskitchen.nl',
+        }),
+    ]
 });
