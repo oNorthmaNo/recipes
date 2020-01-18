@@ -13,9 +13,10 @@ module.exports = ({ mode } = { mode: "production" }) => {
   return webpackMerge({
     entry: './src/index.js',
     output: {
-      publicPath: '/recipes',
+      publicPath: '/recipes/',
       path: path.resolve(__dirname, '../public'),
-      filename: 'bundled.js'
+      filename: 'bundle.js',
+      chunkFilename: '[name].bundle.js',
     },
     module: {
       rules: [
