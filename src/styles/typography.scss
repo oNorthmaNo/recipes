@@ -1,0 +1,49 @@
+$h1-font-size-s: 24px !default;
+$h1-font-size-m: 36px !default;
+$h1-font-size-l: 44px !default;
+
+
+$font-size-s: 13px !default;
+$font-size-m: 16px !default;
+$font-size-l: 20px !default;
+
+$line-height-s: 13px !default;
+$line-height-m: 16px !default;
+$line-height-l: 20px !default;
+
+$p: selector('p');
+$p-default: selector('p', true);
+
+#{$p-default} {
+    font-size: $font-size-m;
+    line-height: $line-height-m;
+    margin-bottom: 16px;
+    
+    &#{$p}--small {
+        font-size: $font-size-s;
+        line-height: $line-height-s;
+    }
+
+    &#{$p}--large {
+        font-size: $font-size-l;
+        line-height: $line-height-l;
+    }
+}
+
+.h1 {
+    color: $blue;
+    font-size: $h1-font-size-m;
+
+    @include breakpoint (s, m) {
+        font-size: $h1-font-size-s;
+    }
+}
+
+.h2 {
+    color: $blue;
+    font-size: $h1-font-size-s;
+
+    @include breakpoint (s, m) {
+        font-size: $h1-font-size-s;
+    }
+}

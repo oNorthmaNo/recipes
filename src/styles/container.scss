@@ -1,0 +1,17 @@
+.container {
+    padding: 24px;
+
+    @include breakpoint(xs, m) {
+        padding: 16px;
+    }
+
+    &.container--x {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    &.container--y {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+}

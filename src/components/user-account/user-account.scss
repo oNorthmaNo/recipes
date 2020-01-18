@@ -1,0 +1,47 @@
+@import '../../style.scss';
+
+.user-account__dropdown {
+    display: inline-block;
+    position: relative;
+    color: $blue;
+    font-size: inherit;
+}
+
+.user-account__dropdown__content {
+    position: absolute;
+    margin-top: 5px;
+    border-top: 1px solid grey;
+    list-style-type: none;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
+    background: $white;
+}
+
+.user-account__dropdown__content li:first-child {
+    border-top: none;
+}
+
+.user-account__dropdown__content li {
+    padding: 10px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+    border-top: 1px solid $blue;
+}
+
+.user-account__dropdown__content li:hover {
+    background-color: $green;
+  }
+
+.user-account__dropdown--active .dropdown__content {
+    display: block;
+}
+
+.user-account__dropdown__trigger {
+    cursor: pointer;
+    padding: 10px 20px;
+    text-transform: capitalize;
+}
+
+.user-account__dropdown__trigger:after {
+    content: '\25BE';
+    margin: 0 0 0 8px;
+}

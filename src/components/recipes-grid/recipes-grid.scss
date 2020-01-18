@@ -1,0 +1,28 @@
+@import '../../style.scss';
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0px 32px 0 32px;
+}
+
+.grid__cell {
+  // flex: 0 1 24%;
+  width: 400px;
+  text-align: center;
+  margin: 25px;
+}
+
+.grid__cell_image {
+  object-fit: cover;
+  width: 100%;
+  height: 80%;
+}
+
+.grid__cell__content {
+  &:hover {
+    border: 2px solid $green;
+    cursor: pointer;
+  }
+}

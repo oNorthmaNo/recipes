@@ -1,0 +1,62 @@
+@import '../../style.scss';
+
+.recipe-details {
+  width: 60vw;
+  margin: 20px auto;
+}
+
+.recipe-details__title {
+  margin: 16px 0;
+  text-transform: capitalize;
+}
+
+.recipe-details__breadcrumb {
+  color: $blue;
+  cursor: pointer;
+
+  &::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f053";
+    font-size: 14px;
+  }
+}
+
+.recipe-details__link {
+  margin-left: 10px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.recipe-details__subTitle {
+  display: flex;
+  align-items: center;
+}
+
+.recipe-details__difficulty {
+  font-weight: 500;
+  padding: 5px 15px;
+  border: 1px solid $blue;
+  text-transform: capitalize;
+  border-radius: 20px;
+  margin: 0 30px;
+}
+
+.recipe-details__favorite {
+  margin-left: 8px;
+  &:before {
+      content: "\F004";
+      font-weight: 400;
+      font-family: "Font Awesome 5 Free";
+      color: $blue;
+      position: relative;
+      right: 3px;
+      bottom: -1px;
+  }
+}
+
+.recipe-details__content {
+  margin-top: 50px;
+}

@@ -1,0 +1,36 @@
+.detail-selector {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 500px;
+    margin-top: 16px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    overflow: auto;
+    list-style: none;
+}
+
+.detail-selector__inner-list {
+    display: block;
+    margin-top: 8px;
+    list-style: none;
+}
+
+.detail-selector__item {
+    padding: 8px;
+}
+
+.detail-selector__title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    font-weight: bold;
+    line-height: 27px;
+}
+
+.detail-selector__description {
+    white-space: nowrap;
+    display: block;
+    line-height: 27px;
+}

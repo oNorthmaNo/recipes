@@ -1,0 +1,44 @@
+@import '../../style.scss';
+
+.daily-recipe-list__body {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.daily-recipe-list__item {
+    display: flex;
+    height: (380px / 3);
+    cursor: pointer;
+    padding: 8px;
+
+    &:hover {
+        background-color: $green;
+    }
+
+    & + & {
+        border-top: 1px solid grey;
+    }
+    
+}
+
+.daily-recipe-list__image {
+    height: 100%;
+    // width: 100%;
+    object-fit: contain;
+}
+
+.daily-recipe-list__title {
+    display: block;
+    padding-left: 8px;
+    font-weight: bold;
+}
+
+.daily-recipe-list__footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8px;
+    margin-top: auto;
+
+}

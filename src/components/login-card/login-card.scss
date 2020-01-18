@@ -1,0 +1,133 @@
+@import '../../style.scss';
+
+$login: selector('login');
+
+.card {
+    display: flex;
+    background-color: $green-light;
+    margin-top: 24px;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 490px;
+    height: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+
+    @include breakpoint(m) { 
+        max-width: 490px;
+     }
+
+    @include breakpoint (xs, s) {
+        margin: auto;
+        width: 100%;
+    }
+}
+
+.card__header {
+    position: relative;
+}
+
+.card__title {
+    max-width: 100%;
+    padding: 24px;
+}
+
+.card__content {
+    padding: 16px 16px 0 16px;
+    border-radius: 0 0 2px 2px;
+}
+
+.card__footer {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card__footer__link {
+    font-size: $font-size-s;
+    text-decoration: underline;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    padding-right: 8px;
+    margin-bottom: 16px;
+    &:hover {
+        color: $blue;
+    }
+}
+
+#{$login}__logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#{$login}__logo {
+    display: block;
+    height: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+
+    img {
+        height: 100%;
+    }
+
+    @include breakpoint(xs, s) {
+        // display: none;
+    }
+}
+
+#{$login}__input-field {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+#{$login}__label {
+    width: 100%;
+    color: $blue;
+    margin-bottom: 8px;
+    font-weight: 700;
+    display: inline-block;
+    line-height: 20px;
+}
+
+#{$login}__input {
+    display: inline-block;
+    border: 1px solid $blue;
+    width: 100%;
+    height: 40px;
+    padding: 8px 12px;
+    line-height: 20px;
+    box-sizing: border-box;
+    outline: 0;
+    background-color: $white;
+
+    &:focus {
+        border: 1px solid $green;
+    }
+    
+}
+
+#{$login}__form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+}
+
+#{$login}__button, 
+#{$login}__fieldset, 
+#{$login}__button-container {
+    width: 100%;
+}
+
+#{$login}__button {
+    justify-content: center;
+}
+

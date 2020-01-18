@@ -1,0 +1,23 @@
+@import '../../styles/colors.scss';
+
+.tab-list {
+    border-bottom: 1px solid $blue;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .tab-list-item {
+    display: inline-block;
+    cursor: pointer;
+    list-style: none;
+    margin-bottom: -1px;
+    padding: 0.5rem 0.75rem;
+    color: $blue;
+  }
+  
+  .tab-list-active {
+    background-color: $white;
+    border: solid $blue;
+    border-width: 1px 1px 0 1px;
+  }

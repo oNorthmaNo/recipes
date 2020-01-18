@@ -1,0 +1,84 @@
+@import '../../style.scss';
+
+$jumbotron: selector('jumbotron');
+
+#{$jumbotron} {
+    margin: 32px 32px;
+    background-color: $blue;
+    color: $white;
+
+    @include breakpoint(s) {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    // #{$jumbotron}__visual {
+
+    // }
+
+    #{$jumbotron}__header {
+        margin-bottom: 16px;
+        color: $white;
+    }
+
+    #{$jumbotron}__body {
+        padding: 15px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    #{$jumbotron}__search {
+        display: flex;
+        flex-direction: row;
+        background-color: $white;
+        height: 32px;
+        line-height: 25px;
+        margin-bottom: 16px;
+        width: 50%;
+    }
+
+    #{$jumbotron}__search-field {
+        background-color: $white;
+        border: 0;
+        width: 100%;
+        font-size: inherit;
+        padding: 8px;
+        outline: none;
+
+        &:focus {
+            border: 0.5px solid $green;
+        }
+    }
+    
+    #{$jumbotron}__search-sumbit {
+        color: $blue;
+        padding: 8px;
+        background: none;
+        border: 0;
+        height: 32px;
+        width: 32px;
+        cursor: pointer;
+
+        .fa-search {
+            position: relative;
+            font-size: 16px;
+        }
+
+        &:hover {
+            background-color: $blue;
+            color: $green;
+            border: 0.5px solid $green;
+            border-left: 0;
+        }
+    }
+
+    #{$jumbotron}__search-filters {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 0;
+        width: 80%;
+    }
+}
