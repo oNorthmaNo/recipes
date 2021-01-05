@@ -43,7 +43,7 @@
   "dependencies": {
     "react-router-dom": "^5.1.2",
     "react-select": "^3.0.8",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-redux": "^5.0.7",
